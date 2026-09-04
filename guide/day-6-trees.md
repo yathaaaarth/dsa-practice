@@ -967,6 +967,7 @@ with `node.val` evaluated once. Strict `<` on both sides because BSTs here conta
 duplicates**; `<=` would wrongly accept them.
 
 **(4)** **The bound tightening — the heart of the solution.**
+
 - Left child: range becomes `(low, node.val)` — everything left must stay below this node.
 - Right child: range becomes `(node.val, high)` — everything right must stay above it.
 

@@ -582,6 +582,7 @@ back up). Recognising that these are two traversals of the same decision tree is
 
 ### Complexity
 Let n = length, L = number of letters.
+
 - **Time O(n · 2^L)** — 2^L results, each O(n) to build. Note the string concatenation `o + c`
   copies the whole prefix each time, which is where the factor of n comes from.
 - **Space O(n · 2^L)** for the output.

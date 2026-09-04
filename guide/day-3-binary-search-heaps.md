@@ -48,6 +48,7 @@ line must preserve that. When you're unsure whether to write `mid` or `mid ± 1`
 this preserve the invariant, and does the range definitely shrink?
 
 **Two facts worth banking:**
+
 - When the loop ends without a hit, `lo` is the **insertion point** — the index where the
   target belongs. Problems 2 and 3 are that fact wearing costumes.
 - `mid = (lo + hi) // 2` rounds **down**, so `mid` can equal `lo` but never `hi` (when
@@ -1032,6 +1033,7 @@ order; if you needed them sorted by frequency you'd pop one at a time and revers
 
 ### Complexity
 Let n = elements, m = distinct values (m ≤ n).
+
 - **Time O(n + m log k)** — O(n) counting, then m heap operations at O(log k). With k small
   this is effectively **O(n)**.
 - **Space O(m)** for the counter, O(k) for the heap.

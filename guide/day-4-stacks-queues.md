@@ -163,6 +163,7 @@ avoids a three-way `if/elif/else`.
 test instead of `if c == ')' or c == ']' or c == '}'`.
 
 **(3)** Two failure modes in one condition, and the order matters:
+
 - **`not stack`** — a closing bracket with nothing open, e.g. `")("`. Must be checked
   **first**: `stack.pop()` on an empty list raises `IndexError`. Python's `or` short-circuits,
   so if `not stack` is true the `pop` never runs. That short-circuit is load-bearing.

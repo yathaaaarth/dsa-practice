@@ -48,6 +48,7 @@ Two facts fall out of this single loop:
   shrinks by exactly 1 each step until it's 0.
 
 **The loop condition is the thing to get exactly right.** `while fast and fast.next:`
+
 - `fast` — is `fast` itself a real node? (even-length lists end here)
 - `fast.next` — because we're about to write `fast.next.next`; without this check you get
   `AttributeError: 'NoneType' object has no attribute 'next'` (odd-length lists end here)
@@ -150,6 +151,7 @@ class Solution:
 [Python §12](./01-python-for-dsa.md).)
 
 **(2)** **The two-part condition, and the reason for each:**
+
 - `fast` handles **even**-length lists — `fast` lands exactly on `None` past the end.
 - `fast.next` handles **odd**-length lists — `fast` stops on the last real node, and
   `fast.next.next` would crash.
@@ -266,11 +268,13 @@ of the few problems where the proof is worth memorising alongside the code.
 ### Intuition — with the proof
 
 Let:
+
 - `F` = distance from `head` to the cycle entrance
 - `a` = distance from the entrance to the meeting point (along the cycle)
 - `C` = cycle length
 
 When they meet:
+
 - `slow` has travelled `F + a`
 - `fast` has travelled `F + a + nC` for some whole number of extra laps `n`
 - `fast` travelled exactly twice as far: `2(F + a) = F + a + nC`
@@ -1000,6 +1004,7 @@ class Solution:
 **(1)** The carry between columns, 0 or 1.
 
 **(2)** **The three-part condition is the whole problem.** `or`, not `and`:
+
 - `l1` — the first list still has digits
 - `l2` — the second still has digits
 - `carry` — **there's a leftover carry even though both lists are done**

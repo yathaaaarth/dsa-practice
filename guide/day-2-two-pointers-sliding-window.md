@@ -52,6 +52,7 @@ movement is 2n, so the work is O(n). (See [Complexity Rule 2](./02-complexity.md
 amortised analysis and it's the most commonly misunderstood point in the whole topic.)
 
 **The one design decision:** *when do I shrink?*
+
 - Want the **smallest valid** window → shrink **while valid**, recording as you go.
 - Want the **largest valid** window → shrink **while invalid**, recording after.
 

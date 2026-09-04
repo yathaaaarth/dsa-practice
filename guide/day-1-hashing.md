@@ -482,6 +482,7 @@ difference and you've shown you understand the trade.
 
 ### Complexity
 Let n = number of words, k = max word length.
+
 - **Count-key version: O(n · k)** — each word scanned once, and the 26-slot key is O(1) to build and hash.
 - **Sorted-key version: O(n · k log k)** — the sort dominates.
 - **Space O(n · k)** for the groups.
@@ -886,6 +887,7 @@ sets the base case `ans[0] = 0` for free (zero has no 1-bits).
 **(2)** Start at 1: index 0 is already correct, and `0 >> 1` would just be 0 again.
 
 **(3)** The recurrence. Three things worth noting:
+
 - `i >> 1` is `i // 2`, but the shift makes the *intent* — "drop the last bit" — explicit.
 - `i & 1` isolates the last bit: `5 & 1 = 0b101 & 0b001 = 1`.
 - **The parentheses around `(i & 1)` are mandatory.** In Python `+` binds tighter than `&`,
