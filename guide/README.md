@@ -21,8 +21,14 @@ able to recite old ones.
 | [03 · Pattern cheat sheet](./03-pattern-cheatsheet.md) | **The most important page.** Trigger phrase → pattern → template. 15 templates that cover most of LeetCode |
 | [Bugs found in the original code](./bugs-found.md) | Six solutions in this repo were broken. What went wrong, and how to catch each class of mistake |
 
-Single-page version for reading offline or printing to PDF:
-**[study-guide.html](./study-guide.html)** — open it in a browser, then Ctrl/Cmd-P → Save as PDF.
+Two other ways to use this guide:
+
+- **Track your progress** — the **[DSA Pattern Ladder](https://claude.ai/code/artifact/b2bf611d-67da-4d17-af9b-431ef374a093)** turns the seven days into a
+  climb: one rung per day, a running streak, and all 70 problems with their LeetCode links,
+  pattern names and recognition cues. Ticking a problem saves and follows you across devices.
+  *(A private page — it opens for the repository owner only.)*
+- **Read it offline, or print it** — **[study-guide.html](./study-guide.html)** puts all seven
+  days on a single page. Open it in a browser, then Ctrl/Cmd-P → Save as PDF.
 
 ---
 
@@ -47,6 +53,9 @@ medium tier.
 ## Progress tracker
 
 Tick these off as you go. Re-solving from a blank screen counts; reading does not.
+
+The **[DSA Pattern Ladder](https://claude.ai/code/artifact/b2bf611d-67da-4d17-af9b-431ef374a093)** is the live version of this list — same 70 problems, plus
+streaks and per-day progress. The checkboxes below are the copy that works on GitHub and offline.
 
 ### Day 1 — Hashing, Sets & Bit Tricks
 - [ ] Contains Duplicate `#01`
